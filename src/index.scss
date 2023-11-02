@@ -1,0 +1,58 @@
+body {
+  background: lightgray;
+  margin: 50px;
+}
+
+.flag {
+  width: 200px;
+  height: 133px;
+  display: flex;
+  
+  &:first-child {
+    border-radius: 8px;
+  }
+}
+
+.column {
+  width: 200px;
+  background: linear-gradient(
+    to top,
+    hsl(52, 100%, 50%) 0% 50%,
+    hsl(211, 100%, 36%) 50% 100%
+  );
+  animation: upDown 500ms infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes upDown {
+  from {
+    transform: translateY(8px);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+@for $i from 1 through 20 {
+  .column:nth-child(#{$i}) {
+    animation-delay: $i*100ms;
+  }
+}
+
+p {
+  font-family: Century;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+.container, .legend {
+  
+ alignment: center;
+  justify-content: center;
+  left: 50%;
+  margin: auto; 
+display: flex;  
+  
+}
