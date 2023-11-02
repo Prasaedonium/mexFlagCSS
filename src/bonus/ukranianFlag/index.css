@@ -1,0 +1,101 @@
+body {
+	 background: lightgray;
+	 margin: 50px;
+}
+ .flag {
+	 width: 200px;
+	 height: 133px;
+	 display: flex;
+}
+ .flag:first-child {
+	 border-radius: 8px;
+}
+ .column {
+	 width: 200px;
+	 background: linear-gradient(to top, #fd0 0% 50%, #0059b8 50% 100%);
+	 animation: upDown 500ms infinite;
+	 animation-direction: alternate;
+	 animation-timing-function: ease-in-out;
+	 animation-fill-mode: backwards;
+}
+ @keyframes upDown {
+	 from {
+		 transform: translateY(8px);
+	}
+	 to {
+		 transform: translateY(-8px);
+	}
+}
+ .column:nth-child(1) {
+	 animation-delay: 100ms;
+}
+ .column:nth-child(2) {
+	 animation-delay: 200ms;
+}
+ .column:nth-child(3) {
+	 animation-delay: 300ms;
+}
+ .column:nth-child(4) {
+	 animation-delay: 400ms;
+}
+ .column:nth-child(5) {
+	 animation-delay: 500ms;
+}
+ .column:nth-child(6) {
+	 animation-delay: 600ms;
+}
+ .column:nth-child(7) {
+	 animation-delay: 700ms;
+}
+ .column:nth-child(8) {
+	 animation-delay: 800ms;
+}
+ .column:nth-child(9) {
+	 animation-delay: 900ms;
+}
+ .column:nth-child(10) {
+	 animation-delay: 1000ms;
+}
+ .column:nth-child(11) {
+	 animation-delay: 1100ms;
+}
+ .column:nth-child(12) {
+	 animation-delay: 1200ms;
+}
+ .column:nth-child(13) {
+	 animation-delay: 1300ms;
+}
+ .column:nth-child(14) {
+	 animation-delay: 1400ms;
+}
+ .column:nth-child(15) {
+	 animation-delay: 1500ms;
+}
+ .column:nth-child(16) {
+	 animation-delay: 1600ms;
+}
+ .column:nth-child(17) {
+	 animation-delay: 1700ms;
+}
+ .column:nth-child(18) {
+	 animation-delay: 1800ms;
+}
+ .column:nth-child(19) {
+	 animation-delay: 1900ms;
+}
+ .column:nth-child(20) {
+	 animation-delay: 2000ms;
+}
+ p {
+	 font-family: Century;
+	 font-size: 36px;
+	 letter-spacing: 2px;
+}
+ .container, .legend {
+	 alignment: center;
+	 justify-content: center;
+	 left: 50%;
+	 margin: auto;
+	 display: flex;
+}
+ 
